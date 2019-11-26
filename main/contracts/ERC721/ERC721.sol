@@ -362,11 +362,11 @@ contract ERC721 is Context, ERC165, IERC721 {
     }
 
     /*Spend ERC223 tokens */
-    function buyWithERC223(uint amount, bytes memory _data) public payable{
+    function buyWithERC223(uint256 amount, bytes memory _data) public payable{
         require(ERC223Token.transfer(msg.sender, amount, _data));
         _mint(msg.sender, _tokenCount);
     }
 
-    function tokenFallback(address _from, uint _value, bytes memory _data) public {
+    function tokenFallback(address _from, uint256 _value, bytes memory _data) public {
     }
 }
