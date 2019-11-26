@@ -1,0 +1,356 @@
+{
+  "contractName": "IERC223Recipient",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_value",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_data",
+          "type": "bytes"
+        }
+      ],
+      "name": "tokenFallback",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.13+commit.5b0b510c\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_from\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"_data\",\"type\":\"bytes\"}],\"name\":\"tokenFallback\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"tokenFallback(address,uint256,bytes)\":{\"details\":\"Standard ERC223 function that will handle incoming token transfers. \",\"params\":{\"_data\":\"Transaction metadata.\",\"_from\":\"Token sender address.\",\"_value\":\"Amount of tokens.\"}}},\"title\":\"Contract that will work with ERC223 tokens.\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/franc/Documents/ESILV/A5/Blockchain Prog/TD2/main/contracts/ERC223/IERC223Recipient.sol\":\"IERC223Recipient\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":0},\"remappings\":[]},\"sources\":{\"/C/Users/franc/Documents/ESILV/A5/Blockchain Prog/TD2/main/contracts/ERC223/IERC223Recipient.sol\":{\"keccak256\":\"0x1be0f2821d34b62242549250ad7e347f96c7921ce480fb775ee01d26a2cefd83\",\"urls\":[\"bzz-raw://ce40fcf70f495f5f76cfe35f2a4c3669e0bf6d958c83938a851a8cefd2256007\",\"dweb:/ipfs/QmRHbTeEsKKAFihpXc4GS24vU63YcCNFBPvF1UFJZvaLmz\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.5.1;\r\n\r\n /**\r\n * @title Contract that will work with ERC223 tokens.\r\n */\r\n \r\ncontract IERC223Recipient { \r\n/**\r\n * @dev Standard ERC223 function that will handle incoming token transfers.\r\n *\r\n * @param _from  Token sender address.\r\n * @param _value Amount of tokens.\r\n * @param _data  Transaction metadata.\r\n */\r\n    function tokenFallback(address _from, uint _value, bytes memory _data) public;\r\n}",
+  "sourcePath": "C:\\Users\\franc\\Documents\\ESILV\\A5\\Blockchain Prog\\TD2\\main\\contracts\\ERC223\\IERC223Recipient.sol",
+  "ast": {
+    "absolutePath": "/C/Users/franc/Documents/ESILV/A5/Blockchain Prog/TD2/main/contracts/ERC223/IERC223Recipient.sol",
+    "exportedSymbols": {
+      "IERC223Recipient": [
+        902
+      ]
+    },
+    "id": 903,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 892,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".1"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:8"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title Contract that will work with ERC223 tokens.",
+        "fullyImplemented": false,
+        "id": 902,
+        "linearizedBaseContracts": [
+          902
+        ],
+        "name": "IERC223Recipient",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": "@dev Standard ERC223 function that will handle incoming token transfers.\n\n * @param _from  Token sender address.\n@param _value Amount of tokens.\n@param _data  Transaction metadata.",
+            "id": 901,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "tokenFallback",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 899,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 894,
+                  "name": "_from",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 901,
+                  "src": "360:13:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 893,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "360:7:8",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 896,
+                  "name": "_value",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 901,
+                  "src": "375:11:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 895,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "375:4:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 898,
+                  "name": "_data",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 901,
+                  "src": "388:18:8",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 897,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "388:5:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "359:48:8"
+            },
+            "returnParameters": {
+              "id": 900,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "414:0:8"
+            },
+            "scope": 902,
+            "src": "337:78:8",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 903,
+        "src": "96:322:8"
+      }
+    ],
+    "src": "0:418:8"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/franc/Documents/ESILV/A5/Blockchain Prog/TD2/main/contracts/ERC223/IERC223Recipient.sol",
+    "exportedSymbols": {
+      "IERC223Recipient": [
+        902
+      ]
+    },
+    "id": 903,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 892,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".1"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:8"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title Contract that will work with ERC223 tokens.",
+        "fullyImplemented": false,
+        "id": 902,
+        "linearizedBaseContracts": [
+          902
+        ],
+        "name": "IERC223Recipient",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": "@dev Standard ERC223 function that will handle incoming token transfers.\n\n * @param _from  Token sender address.\n@param _value Amount of tokens.\n@param _data  Transaction metadata.",
+            "id": 901,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "tokenFallback",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 899,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 894,
+                  "name": "_from",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 901,
+                  "src": "360:13:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 893,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "360:7:8",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 896,
+                  "name": "_value",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 901,
+                  "src": "375:11:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 895,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "375:4:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 898,
+                  "name": "_data",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 901,
+                  "src": "388:18:8",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 897,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "388:5:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "359:48:8"
+            },
+            "returnParameters": {
+              "id": 900,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "414:0:8"
+            },
+            "scope": 902,
+            "src": "337:78:8",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 903,
+        "src": "96:322:8"
+      }
+    ],
+    "src": "0:418:8"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.13+commit.5b0b510c.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.11",
+  "updatedAt": "2019-11-26T17:52:37.909Z",
+  "devdoc": {
+    "methods": {
+      "tokenFallback(address,uint256,bytes)": {
+        "details": "Standard ERC223 function that will handle incoming token transfers. ",
+        "params": {
+          "_data": "Transaction metadata.",
+          "_from": "Token sender address.",
+          "_value": "Amount of tokens."
+        }
+      }
+    },
+    "title": "Contract that will work with ERC223 tokens."
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
